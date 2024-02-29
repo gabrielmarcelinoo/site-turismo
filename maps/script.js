@@ -23,7 +23,7 @@ function initMap() {
 
     // Criar janela de informações para a Basílica
     const basilicaInfoWindow = new google.maps.InfoWindow({
-        content: '<h3>Basílica de Nossa Senhora Aparecida</h3><p>Breve descrição da Basílica</p><img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Frente_da_Bas%C3%ADlica_de_Nossa_Senhora_Aparecida%2C_Aparecida_SP.JPG" alt="Imagem da Basílica"><p>Breve descrição da Basílica</p></div>'
+        content: '<h3>Basílica de Nossa Senhora Aparecida</h3> <p>Breve descrição da Basílica </p> <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Frente_da_Bas%C3%ADlica_de_Nossa_Senhora_Aparecida%2C_Aparecida_SP.JPG" alt="Imagem da Basílica"></div>'
     });
 
     // Adicionar evento de mouseover para exibir informações ao passar o mouse sobre o marcador da Basílica
