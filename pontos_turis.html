@@ -4,58 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atrações Turísticas</title>
+    <link rel="stylesheet" href="pontos_turis.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        .famous-attractions {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            padding: 20px;
-        }
-
-        .attraction {
-            margin: 20px;
-            text-align: center;
-            flex: 1 1 40%; /* Distribui as atrações igualmente em diferentes tamanhos de tela */
-        }
-
-        .attraction img {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        .rating {
-            margin-top: 10px;
-        }
-
-        .rating i {
-            font-size: 24px;
-            color: gold;
-            cursor: pointer;
-        }
-
-        .rating i:hover,
-        .rating i:hover ~ i {
-            color: darkgoldenrod;
-        }
-    </style>
+  
 </head>
 <body>
     <header>
@@ -90,34 +41,6 @@
         <!-- Adicione mais atrações conforme necessário -->
     </section>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const attractions = document.querySelectorAll(".attraction");
-
-            attractions.forEach((attraction, index) => {
-                const stars = attraction.querySelectorAll(".fa-star");
-
-                stars.forEach((star, i) => {
-                    star.addEventListener("click", () => {
-                        // Define a avaliação do usuário com base na posição da estrela clicada
-                        const rating = i + 1;
-
-                        // Atualiza a cor das estrelas clicadas
-                        stars.forEach((star, j) => {
-                            star.classList.toggle("far", j >= rating);
-                            star.classList.toggle("fas", j < rating);
-                        });
-
-                        // Aqui você pode enviar a avaliação para o servidor ou realizar outras ações com ela
-                    });
-                });
-
-                // Alterna a ordem das atrações para que elas apareçam alternadamente à esquerda e à direita
-                if (index % 2 !== 0) {
-                    attraction.style.order = "-1";
-                }
-            });
-        });
-    </script>
+<script src="pontos_turis.js"></script>    
 </body>
 </html>

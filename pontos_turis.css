@@ -1,0 +1,50 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.famous-attractions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.attraction {
+    margin: 20px;
+    text-align: center;
+    flex: 1 1 40%; /* Distribui as atrações igualmente em diferentes tamanhos de tela */
+}
+
+.attraction img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.rating {
+    margin-top: 10px;
+}
+
+.rating i {
+    font-size: 24px;
+    color: gold;
+    cursor: pointer;
+}
+
+.rating i:hover,
+.rating i:hover ~ i {
+    color: darkgoldenrod;
+}
